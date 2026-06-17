@@ -1,0 +1,139 @@
+
+<!DOCTYPE html><html lang="pt-br"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Raspadinha Keevo V4</title>
+<style>
+body{margin:0;background:linear-gradient(135deg,#4c1d95,#7c3aed);font-family:Arial;color:#fff;text-align:center;overflow:hidden}
+.card{max-width:1100px;height:620px;margin:20px auto;background:#fff;border-radius:28px;position:relative;overflow:hidden}
+.fake{position:absolute;color:#8c8c8c;font-weight:bold;font-size:20px}
+#scratch{position:absolute;inset:0;width:100%;height:100%;touch-action:none}
+#reveal{display:none;position:fixed;inset:0;background:rgba(0,0,0,.9);z-index:999;color:#fff;align-items:center;justify-content:center;flex-direction:column}
+#date{font-size:110px;font-weight:900;animation:zoom .8s ease-out}
+@keyframes zoom{from{transform:scale(.2)}to{transform:scale(1)}}
+#confetti{position:fixed;inset:0;pointer-events:none;z-index:1000}
+</style></head><body>
+<h1>👀 A CHARADA TERMINOU...</h1>
+<p>Raspe para descobrir a data oficial.</p>
+<div class="card" id="card">
+<div class="fake" style="left:0%;top:0%">01/JULHO/2025</div>
+<div class="fake" style="left:13%;top:9%">04/AGOSTO/2026</div>
+<div class="fake" style="left:26%;top:18%">07/SETEMBRO/2027</div>
+<div class="fake" style="left:39%;top:27%">10/OUTUBRO/2025</div>
+<div class="fake" style="left:52%;top:36%">13/NOVEMBRO/2026</div>
+<div class="fake" style="left:65%;top:45%">16/JULHO/2027</div>
+<div class="fake" style="left:78%;top:54%">19/AGOSTO/2025</div>
+<div class="fake" style="left:91%;top:63%">22/SETEMBRO/2026</div>
+<div class="fake" style="left:12%;top:72%">25/OUTUBRO/2027</div>
+<div class="fake" style="left:25%;top:81%">28/NOVEMBRO/2025</div>
+<div class="fake" style="left:38%;top:2%">31/JULHO/2026</div>
+<div class="fake" style="left:51%;top:11%">03/AGOSTO/2027</div>
+<div class="fake" style="left:64%;top:20%">06/SETEMBRO/2025</div>
+<div class="fake" style="left:77%;top:29%">09/OUTUBRO/2026</div>
+<div class="fake" style="left:90%;top:38%">12/NOVEMBRO/2027</div>
+<div class="fake" style="left:11%;top:47%">15/JULHO/2025</div>
+<div class="fake" style="left:24%;top:56%">18/AGOSTO/2026</div>
+<div class="fake" style="left:37%;top:65%">21/SETEMBRO/2027</div>
+<div class="fake" style="left:50%;top:74%">24/OUTUBRO/2025</div>
+<div class="fake" style="left:63%;top:83%">27/NOVEMBRO/2026</div>
+<div class="fake" style="left:76%;top:4%">30/JULHO/2027</div>
+<div class="fake" style="left:89%;top:13%">02/AGOSTO/2025</div>
+<div class="fake" style="left:10%;top:22%">05/SETEMBRO/2026</div>
+<div class="fake" style="left:23%;top:31%">08/OUTUBRO/2027</div>
+<div class="fake" style="left:36%;top:40%">11/NOVEMBRO/2025</div>
+<div class="fake" style="left:49%;top:49%">14/JULHO/2026</div>
+<div class="fake" style="left:62%;top:58%">17/AGOSTO/2027</div>
+<div class="fake" style="left:75%;top:67%">20/SETEMBRO/2025</div>
+<div class="fake" style="left:88%;top:76%">23/OUTUBRO/2026</div>
+<div class="fake" style="left:9%;top:85%">26/NOVEMBRO/2027</div>
+<div class="fake" style="left:22%;top:6%">29/JULHO/2025</div>
+<div class="fake" style="left:35%;top:15%">01/AGOSTO/2026</div>
+<div class="fake" style="left:48%;top:24%">04/SETEMBRO/2027</div>
+<div class="fake" style="left:61%;top:33%">07/OUTUBRO/2025</div>
+<div class="fake" style="left:74%;top:42%">10/NOVEMBRO/2026</div>
+<div class="fake" style="left:87%;top:51%">13/JULHO/2027</div>
+<div class="fake" style="left:8%;top:60%">16/AGOSTO/2025</div>
+<div class="fake" style="left:21%;top:69%">19/SETEMBRO/2026</div>
+<div class="fake" style="left:34%;top:78%">22/OUTUBRO/2027</div>
+<div class="fake" style="left:47%;top:87%">25/NOVEMBRO/2025</div>
+<div class="fake" style="left:60%;top:8%">28/JULHO/2026</div>
+<div class="fake" style="left:73%;top:17%">31/AGOSTO/2027</div>
+<div class="fake" style="left:86%;top:26%">03/SETEMBRO/2025</div>
+<div class="fake" style="left:7%;top:35%">06/OUTUBRO/2026</div>
+<div class="fake" style="left:20%;top:44%">09/NOVEMBRO/2027</div>
+<div class="fake" style="left:33%;top:53%">12/JULHO/2025</div>
+<div class="fake" style="left:46%;top:62%">15/AGOSTO/2026</div>
+<div class="fake" style="left:59%;top:71%">18/SETEMBRO/2027</div>
+<div class="fake" style="left:72%;top:80%">21/OUTUBRO/2025</div>
+<div class="fake" style="left:85%;top:1%">24/NOVEMBRO/2026</div>
+<div class="fake" style="left:6%;top:10%">27/JULHO/2027</div>
+<div class="fake" style="left:19%;top:19%">30/AGOSTO/2025</div>
+<div class="fake" style="left:32%;top:28%">02/SETEMBRO/2026</div>
+<div class="fake" style="left:45%;top:37%">05/OUTUBRO/2027</div>
+<div class="fake" style="left:58%;top:46%">08/NOVEMBRO/2025</div>
+<div class="fake" style="left:71%;top:55%">11/JULHO/2026</div>
+<div class="fake" style="left:84%;top:64%">14/AGOSTO/2027</div>
+<div class="fake" style="left:5%;top:73%">17/SETEMBRO/2025</div>
+<div class="fake" style="left:18%;top:82%">20/OUTUBRO/2026</div>
+<div class="fake" style="left:31%;top:3%">23/NOVEMBRO/2027</div>
+<div class="fake" style="left:44%;top:12%">26/JULHO/2025</div>
+<div class="fake" style="left:57%;top:21%">29/AGOSTO/2026</div>
+<div class="fake" style="left:70%;top:30%">01/SETEMBRO/2027</div>
+<div class="fake" style="left:83%;top:39%">04/OUTUBRO/2025</div>
+<div class="fake" style="left:4%;top:48%">07/NOVEMBRO/2026</div>
+<div class="fake" style="left:17%;top:57%">10/JULHO/2027</div>
+<div class="fake" style="left:30%;top:66%">13/AGOSTO/2025</div>
+<div class="fake" style="left:43%;top:75%">16/SETEMBRO/2026</div>
+<div class="fake" style="left:56%;top:84%">19/OUTUBRO/2027</div>
+<div class="fake" style="left:69%;top:5%">22/NOVEMBRO/2025</div>
+<div class="fake" style="left:82%;top:14%">25/JULHO/2026</div>
+<div class="fake" style="left:3%;top:23%">28/AGOSTO/2027</div>
+<div class="fake" style="left:16%;top:32%">31/SETEMBRO/2025</div>
+<div class="fake" style="left:29%;top:41%">03/OUTUBRO/2026</div>
+<div class="fake" style="left:42%;top:50%">06/NOVEMBRO/2027</div>
+<canvas id="scratch"></canvas>
+</div>
+<canvas id="confetti"></canvas>
+
+<div id="reveal">
+<div id="date">📅 01/08/2026</div>
+<h1>🎉 VOCÊ DESCOBRIU A DATA! 🎉</h1>
+<h2>Festa de Aniversário – 34 anos Keevo</h2>
+<p>Reserve essa data! Em breve mais informações. 💜</p>
+</div>
+
+<script>
+const c=document.getElementById('scratch'),card=document.getElementById('card');
+const ctx=c.getContext('2d',{willReadFrequently:true});
+c.width=card.clientWidth;c.height=card.clientHeight;
+let g=ctx.createLinearGradient(0,0,c.width,c.height);
+g.addColorStop(0,'#eee');g.addColorStop(.5,'#aaa');g.addColorStop(1,'#f5f5f5');
+ctx.fillStyle=g;ctx.fillRect(0,0,c.width,c.height);
+ctx.fillStyle='#555';ctx.font='bold 44px Arial';ctx.textAlign='center';
+ctx.fillText('RASPE AQUI',c.width/2,c.height/2);
+
+let down=false;
+function pos(e){let r=c.getBoundingClientRect();let p=e.touches?e.touches[0]:e;return{x:p.clientX-r.left,y:p.clientY-r.top};}
+function erase(x,y){ctx.globalCompositeOperation='destination-out';ctx.beginPath();ctx.arc(x,y,42,0,6.28);ctx.fill();check();}
+['mousedown','touchstart'].forEach(v=>c.addEventListener(v,e=>{down=true;let p=pos(e);erase(p.x,p.y)}));
+['mousemove','touchmove'].forEach(v=>c.addEventListener(v,e=>{if(!down)return;e.preventDefault();let p=pos(e);erase(p.x,p.y)}));
+['mouseup','touchend'].forEach(v=>addEventListener(v,()=>down=false));
+
+let done=false;
+function check(){
+if(done)return;
+let d=ctx.getImageData(0,0,c.width,c.height).data,cl=0;
+for(let i=3;i<d.length;i+=4){if(d[i]<15)cl++;}
+if(cl/(d.length/4)>.70){
+done=true;
+document.getElementById('reveal').style.display='flex';
+confetti();
+}}
+
+function confetti(){
+const cv=document.getElementById('confetti'),x=cv.getContext('2d');
+cv.width=innerWidth;cv.height=innerHeight;
+let colors=['#7c3aed','#a855f7','#06b6d4','#f97316','#fff'];
+let p=[...Array(700)].map(()=>({x:Math.random()*cv.width,y:-200*Math.random(),v:2+Math.random()*7,s:4+Math.random()*10,c:colors[Math.floor(Math.random()*5)]}));
+(function a(){x.clearRect(0,0,cv.width,cv.height);p.forEach(o=>{x.fillStyle=o.c;x.fillRect(o.x,o.y,o.s,o.s);o.y+=o.v;});requestAnimationFrame(a);})();
+}
+</script></body></html>
